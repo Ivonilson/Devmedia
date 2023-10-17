@@ -1,0 +1,14 @@
+{
+  "name": "exercicios-express-jogo-escolhido",
+  "version": "1.0.0",
+  "description": "Exercicios DevMedia",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Ivonilson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
