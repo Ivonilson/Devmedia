@@ -12,3 +12,20 @@ let colecao_signos = [
     {"Nome": "Sagitário", "DataInicio": "11-22","DataFim":"12-21"},
     {"Nome": "Capricórnio", "DataInicio": "12-22","DataFim":"01-19"}
 ];
+
+const retorna_signo = (signos, data) => {
+
+    let ano = data.getFullYear();
+
+    let data_inicio_signo = new Date(ano + "-" + signos[0]["DataInicio"] + " 00:00:00");
+    let data_fim_signo = new Date(ano + "-" + signos[0]["DataFim"] + " 23:59:59");
+
+    if(data >= data_inicio_signo && data <= data_fim_signo) {
+        return signos[0]["Nome"];
+    }
+
+}
+
+let data_app = new Date("2020-01-20 00:00:00");
+const nome_signo = retorna_signo(colecao_signos);
+console.log("O signo do dia é: " + nome_signo);
